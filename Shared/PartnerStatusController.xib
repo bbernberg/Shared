@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PartnerStatusController">
+            <connections>
+                <outlet property="activityIndicator" destination="HIQ-af-EqS" id="Qpi-Zi-caG"/>
+                <outlet property="cancelButton" destination="rmU-UL-hBT" id="wg1-Dk-OiV"/>
+                <outlet property="checkingLabel" destination="qt7-Pf-nbi" id="c6V-6e-h7G"/>
+                <outlet property="emailButton" destination="aDC-H6-KKd" id="XyT-pv-9IQ"/>
+                <outlet property="notNowButton" destination="xNB-6q-Gd8" id="f3O-CK-yfx"/>
+                <outlet property="partnerStatusLabel" destination="iMz-Un-7zH" id="gvF-Xj-cGi"/>
+                <outlet property="textButton" destination="qfk-9N-3aa" id="pxz-su-Hzr"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checking partner status..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt7-Pf-nbi">
+                    <rect key="frame" x="61" y="274" width="198" height="20.5"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HIQ-af-EqS" customClass="SharedActivityIndicator">
+                    <rect key="frame" x="145" y="308" width="30" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Oig-ZT-ZHn"/>
+                        <constraint firstAttribute="width" constant="30" id="ht4-SI-IL9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="iMz-Un-7zH">
+                    <rect key="frame" x="20" y="80" width="280" height="61"/>
+                    <animations/>
+                    <string key="text">Your partner has not yet signed up.
+
+Let them know about Shared...</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDC-H6-KKd">
+                    <rect key="frame" x="20" y="186" width="280" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="WiP-3c-IJg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                    <state key="normal" title="Send E-Mail">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="GrayBackground.png"/>
+                    <connections>
+                        <action selector="emailButtonPressed:" destination="-1" eventType="touchUpInside" id="Bkv-30-xTN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfk-9N-3aa">
+                    <rect key="frame" x="23" y="250" width="277" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="eR4-xO-XtD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                    <state key="normal" title="Send Text">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="GrayBackground.png"/>
+                    <connections>
+                        <action selector="textButtonPressed:" destination="-1" eventType="touchUpInside" id="XsT-HX-qRN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-6q-Gd8">
+                    <rect key="frame" x="20" y="464" width="280" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Vxk-Yb-LAx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                    <state key="normal" title="Not Now">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="GrayBackground.png"/>
+                    <connections>
+                        <action selector="notNowButtonPressed:" destination="-1" eventType="touchUpInside" id="0SI-ef-jca"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmU-UL-hBT">
+                    <rect key="frame" x="252" y="518" width="48" height="30"/>
+                    <animations/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="kEI-Fd-laa"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iMz-Un-7zH" secondAttribute="trailing" constant="20" id="1qk-4L-Rmi"/>
+                <constraint firstAttribute="bottom" secondItem="rmU-UL-hBT" secondAttribute="bottom" constant="20" id="239-4d-uq0"/>
+                <constraint firstAttribute="centerY" secondItem="qt7-Pf-nbi" secondAttribute="centerY" id="4Qn-Rp-Kx8"/>
+                <constraint firstItem="qfk-9N-3aa" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="23" id="Afu-od-WKs"/>
+                <constraint firstAttribute="trailing" secondItem="xNB-6q-Gd8" secondAttribute="trailing" constant="20" id="ElT-sS-aMc"/>
+                <constraint firstItem="aDC-H6-KKd" firstAttribute="top" secondItem="iMz-Un-7zH" secondAttribute="bottom" constant="45" id="Etz-dS-ypu"/>
+                <constraint firstItem="qfk-9N-3aa" firstAttribute="top" secondItem="aDC-H6-KKd" secondAttribute="bottom" constant="20" id="GVN-Ux-1jP"/>
+                <constraint firstAttribute="centerX" secondItem="iMz-Un-7zH" secondAttribute="centerX" id="JFn-2g-wiA"/>
+                <constraint firstAttribute="centerX" secondItem="HIQ-af-EqS" secondAttribute="centerX" id="KOF-Bh-X4T"/>
+                <constraint firstAttribute="bottom" secondItem="xNB-6q-Gd8" secondAttribute="bottom" constant="60" id="L0E-k4-gzF"/>
+                <constraint firstItem="iMz-Un-7zH" firstAttribute="top" secondItem="1" secondAttribute="top" constant="80" id="LbY-7l-gqg"/>
+                <constraint firstAttribute="trailing" secondItem="rmU-UL-hBT" secondAttribute="trailing" constant="20" id="Qe0-iK-M1Z"/>
+                <constraint firstItem="xNB-6q-Gd8" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="fa3-S8-IFM"/>
+                <constraint firstAttribute="centerX" secondItem="qt7-Pf-nbi" secondAttribute="centerX" id="iuT-cf-k4q"/>
+                <constraint firstItem="HIQ-af-EqS" firstAttribute="top" secondItem="qt7-Pf-nbi" secondAttribute="bottom" constant="13" id="kgZ-y0-exO"/>
+                <constraint firstItem="iMz-Un-7zH" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="q0x-eV-CHZ"/>
+                <constraint firstItem="aDC-H6-KKd" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="sJL-tX-zRx"/>
+                <constraint firstAttribute="trailing" secondItem="qfk-9N-3aa" secondAttribute="trailing" constant="20" id="xEp-Og-E8l"/>
+                <constraint firstAttribute="trailing" secondItem="aDC-H6-KKd" secondAttribute="trailing" constant="20" id="xPQ-YA-vPC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GrayBackground.png" width="120" height="120"/>
+    </resources>
+</document>

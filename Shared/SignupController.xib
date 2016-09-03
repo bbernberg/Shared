@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignupController">
+            <connections>
+                <outlet property="emailField" destination="12" id="28"/>
+                <outlet property="keyboardHeight" destination="pd0-Fj-JPH" id="NEJ-xs-9Zd"/>
+                <outlet property="nameField" destination="24" id="29"/>
+                <outlet property="passwordField" destination="16" id="30"/>
+                <outlet property="passwordTwoField" destination="18" id="31"/>
+                <outlet property="picture" destination="25" id="32"/>
+                <outlet property="pictureButton" destination="26" id="33"/>
+                <outlet property="scrollView" destination="19" id="39"/>
+                <outlet property="signupButton" destination="41" id="43"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shared_Name_Logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="z66-pq-mxk">
+                            <rect key="frame" x="84" y="74" width="152" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="FLw-1l-i8i"/>
+                                <constraint firstAttribute="width" constant="152" id="WNt-OY-7Lo"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="24" customClass="JVFloatLabeledTextField">
+                            <rect key="frame" x="30" y="254" width="261" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="sHs-OU-fMh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="34"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                            <rect key="frame" x="30" y="293" width="261" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="5e4-NB-2Fp"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="12" customClass="JVFloatLabeledTextField">
+                            <rect key="frame" x="30" y="312" width="261" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="3E1-D8-pa0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="35"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11">
+                            <rect key="frame" x="30" y="349" width="261" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="alq-YX-Ozk"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="16" customClass="JVFloatLabeledTextField">
+                            <rect key="frame" x="30" y="368" width="261" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="MNo-BX-ar5"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="36"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15">
+                            <rect key="frame" x="30" y="405" width="261" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="V2x-I7-buY"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Re-type Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="18" customClass="JVFloatLabeledTextField">
+                            <rect key="frame" x="30" y="424" width="261" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="IIK-pB-hwN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="37"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap To Set Your Picture" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="100" translatesAutoresizingMaskIntoConstraints="NO" id="27">
+                            <rect key="frame" x="110" y="134" width="100" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17">
+                            <rect key="frame" x="30" y="461" width="261" height="2"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="wx5-bP-lFF"/>
+                            </constraints>
+                        </view>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="25">
+                            <rect key="frame" x="110" y="134" width="100" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="GrY-p9-dZ1"/>
+                                <constraint firstAttribute="height" constant="100" id="bcM-B5-Tma"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26">
+                            <rect key="frame" x="110" y="134" width="100" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="15"/>
+                            <state key="normal">
+                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pictureButtonPressed:" destination="-1" eventType="touchUpInside" id="40"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41">
+                            <rect key="frame" x="30" y="480" width="261" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="X8l-BS-DDh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                            <state key="normal" title="Sign Up">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="GrayBackground.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="signupButtonPressed:" destination="-1" eventType="touchUpInside" id="44"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="23" firstAttribute="leading" secondItem="24" secondAttribute="leading" id="1H8-58-7LP"/>
+                        <constraint firstItem="16" firstAttribute="trailing" secondItem="15" secondAttribute="trailing" id="1Pq-9m-jJL"/>
+                        <constraint firstAttribute="trailing" secondItem="24" secondAttribute="trailing" constant="30" id="2tu-7y-SHE"/>
+                        <constraint firstAttribute="centerX" secondItem="41" secondAttribute="centerX" id="35Y-tO-8Tf"/>
+                        <constraint firstItem="16" firstAttribute="top" secondItem="12" secondAttribute="bottom" constant="20" id="4jk-zf-Pnq"/>
+                        <constraint firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="30" id="4rv-Rg-m8o"/>
+                        <constraint firstItem="25" firstAttribute="centerY" secondItem="26" secondAttribute="centerY" id="55N-i8-8he"/>
+                        <constraint firstItem="27" firstAttribute="height" secondItem="25" secondAttribute="height" id="5sW-NK-coS"/>
+                        <constraint firstItem="11" firstAttribute="trailing" secondItem="12" secondAttribute="trailing" id="6Yu-Vq-zvw"/>
+                        <constraint firstAttribute="trailing" secondItem="41" secondAttribute="trailing" constant="30" id="6bU-3e-Yyx"/>
+                        <constraint firstItem="11" firstAttribute="leading" secondItem="12" secondAttribute="leading" id="7cd-YP-RxN"/>
+                        <constraint firstAttribute="centerX" secondItem="26" secondAttribute="centerX" id="8OB-QE-DBh"/>
+                        <constraint firstItem="24" firstAttribute="top" secondItem="26" secondAttribute="bottom" constant="20" id="8S0-Et-krH"/>
+                        <constraint firstAttribute="trailing" secondItem="12" secondAttribute="trailing" constant="30" id="9Ga-oY-KF5"/>
+                        <constraint firstAttribute="centerX" secondItem="z66-pq-mxk" secondAttribute="centerX" id="9eI-dd-kX3"/>
+                        <constraint firstItem="23" firstAttribute="trailing" secondItem="24" secondAttribute="trailing" id="DNM-j7-js5"/>
+                        <constraint firstItem="25" firstAttribute="height" secondItem="26" secondAttribute="height" id="GNd-St-cKm"/>
+                        <constraint firstItem="41" firstAttribute="leading" secondItem="19" secondAttribute="leading" constant="30" id="HPF-Vi-yzL"/>
+                        <constraint firstItem="z66-pq-mxk" firstAttribute="top" secondItem="19" secondAttribute="top" constant="74" id="JGh-ZZ-fh5"/>
+                        <constraint firstItem="15" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="1" id="Nhv-aw-Dva"/>
+                        <constraint firstItem="17" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="1" id="ODI-RQ-nDr"/>
+                        <constraint firstItem="11" firstAttribute="top" secondItem="12" secondAttribute="bottom" constant="1" id="Oyg-gD-FAU"/>
+                        <constraint firstAttribute="centerX" secondItem="12" secondAttribute="centerX" id="PM9-VK-IlX"/>
+                        <constraint firstAttribute="centerX" secondItem="24" secondAttribute="centerX" id="QbS-LS-G35"/>
+                        <constraint firstItem="16" firstAttribute="leading" secondItem="15" secondAttribute="leading" id="S0F-w7-4B0"/>
+                        <constraint firstItem="12" firstAttribute="leading" secondItem="19" secondAttribute="leading" constant="30" id="TiZ-i0-CIp"/>
+                        <constraint firstAttribute="centerX" secondItem="16" secondAttribute="centerX" id="WIY-s5-K3F"/>
+                        <constraint firstItem="18" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="20" id="WhI-2a-9fg"/>
+                        <constraint firstAttribute="centerX" secondItem="18" secondAttribute="centerX" id="YIh-ni-yjd"/>
+                        <constraint firstItem="27" firstAttribute="centerX" secondItem="25" secondAttribute="centerX" id="Yux-Ig-JEB"/>
+                        <constraint firstItem="41" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="20" id="ZcP-DR-Eh6"/>
+                        <constraint firstItem="18" firstAttribute="leading" secondItem="19" secondAttribute="leading" constant="30" id="bil-A0-MUe"/>
+                        <constraint firstItem="12" firstAttribute="top" secondItem="24" secondAttribute="bottom" constant="20" id="g6D-JN-BTe"/>
+                        <constraint firstItem="27" firstAttribute="top" secondItem="26" secondAttribute="top" id="iZ2-Qh-Y1j"/>
+                        <constraint firstItem="23" firstAttribute="top" secondItem="24" secondAttribute="bottom" constant="1" id="ldp-Lm-prC"/>
+                        <constraint firstItem="18" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" id="oeI-Ut-oBS"/>
+                        <constraint firstAttribute="bottom" secondItem="41" secondAttribute="bottom" constant="40" id="pd0-Fj-JPH"/>
+                        <constraint firstItem="26" firstAttribute="top" secondItem="z66-pq-mxk" secondAttribute="bottom" constant="10" id="pyg-hJ-IBo"/>
+                        <constraint firstItem="24" firstAttribute="leading" secondItem="19" secondAttribute="leading" constant="30" id="qky-mm-pxa"/>
+                        <constraint firstItem="25" firstAttribute="width" secondItem="26" secondAttribute="width" id="qp0-kt-cbH"/>
+                        <constraint firstItem="27" firstAttribute="width" secondItem="25" secondAttribute="width" id="rBT-fw-req"/>
+                        <constraint firstAttribute="centerX" secondItem="25" secondAttribute="centerX" id="wDE-NN-tbf"/>
+                        <constraint firstItem="18" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="y7A-5J-Dlf"/>
+                        <constraint firstItem="16" firstAttribute="leading" secondItem="19" secondAttribute="leading" constant="30" id="yWf-nZ-OQp"/>
+                        <constraint firstAttribute="trailing" secondItem="16" secondAttribute="trailing" constant="30" id="zJX-sG-PtM"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="19" firstAttribute="trailing" secondItem="1" secondAttribute="trailing" id="44E-77-gf6"/>
+                <constraint firstItem="19" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="Ie6-2V-r9k"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="1" secondAttribute="top" id="Rvw-pW-Hut"/>
+                <constraint firstItem="19" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="bqy-up-YOC"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GrayBackground.png" width="120" height="120"/>
+        <image name="Shared_Name_Logo.png" width="670" height="207"/>
+    </resources>
+</document>

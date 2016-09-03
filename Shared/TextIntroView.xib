@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4504" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3734.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextController"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-bc-RZ0">
+                    <rect key="frame" x="30" y="262" width="260" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                    <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="fF6-Vv-yV8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="18"/>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="GrayBackground.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="introOKButtonPressed:" destination="-1" eventType="touchUpInside" id="TRA-f8-4PR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="With Shared texting, you can message your partner for free (standard data rates apply).  You can also send voice messages. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="FiG-9N-sqL">
+                    <rect key="frame" x="20" y="86" width="280" height="92"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="plQ-oj-10g">
+                    <rect key="frame" x="20" y="457" width="280" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <string key="text">NOTE: Your partner must have Shared installed for proper Shared messaging functionality.  If you prefer to use iMessage, this can be configured in the settings menu.</string>
+                    <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="plQ-oj-10g" secondAttribute="bottom" constant="46" id="6xi-mN-p6B"/>
+                <constraint firstItem="mfQ-bc-RZ0" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="30" id="AoZ-ls-FsU"/>
+                <constraint firstAttribute="trailing" secondItem="FiG-9N-sqL" secondAttribute="trailing" constant="20" id="KbO-Ah-sge"/>
+                <constraint firstItem="FiG-9N-sqL" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="SSj-3E-5N2"/>
+                <constraint firstAttribute="trailing" secondItem="plQ-oj-10g" secondAttribute="trailing" constant="20" id="amd-em-a1R"/>
+                <constraint firstItem="plQ-oj-10g" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="jd7-vE-uxz"/>
+                <constraint firstAttribute="trailing" secondItem="mfQ-bc-RZ0" secondAttribute="trailing" constant="30" id="mst-OB-fBZ"/>
+                <constraint firstAttribute="centerY" secondItem="mfQ-bc-RZ0" secondAttribute="centerY" id="obW-df-luZ"/>
+                <constraint firstItem="FiG-9N-sqL" firstAttribute="top" secondItem="1" secondAttribute="top" constant="86" id="qf5-93-bqg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GrayBackground.png" width="120" height="120"/>
+    </resources>
+</document>
